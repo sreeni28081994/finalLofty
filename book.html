@@ -1,0 +1,2614 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library Management System</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/webcamera.css">
+
+
+
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Codedthemes" />
+    <link rel="stylesheet" href="css/webcamera.css">
+    <!---Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+    <!-- Favicon icon -->
+     <link rel="shortcut icon" href="favicon.png">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- waves.css -->
+    <!-- scrollbar.css -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/AddedStyles.css">
+    <link rel="stylesheet" type="text/css" href="css/icn-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+	
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+
+
+    
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+    <div class="navbar-wrapper">
+        <div class="navbar-logo">
+            <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#" onclick="return false;">
+                <i class="icon-burger" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-search waves-effect waves-light">
+                <div class="header-search">
+                    <div class="main-search morphsearch-search">
+                        <div class="input-group">
+                            <span class="input-group-prepend search-close"><i class="ti-close input-group-text"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter Keyword">
+                            <span class="input-group-append search-btn"><i class="ti-search input-group-text"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="Home">
+                <img class="img-fluid" src="images/logo-main.png" alt="Theme-Logo" />
+            </a>
+            <a class="mobile-options waves-effect waves-light">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="navbar-container container-fluid">
+            <ul class="nav-left">
+                <li>
+                    <div class="sidebar_toggle"><a id="one" href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                </li>
+                <li>
+                    <a href="#" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                        <i class="icon-full_screen" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav-right">
+                <li class="header-notification">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="badge bg-c-red"></span>
+                    </a>
+                    <ul class="show-notification">
+                        <li>
+                            <h6>Notifications</h6>
+                            <label class="label label-danger">New</label>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="notification-user">John Doe</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="">
+                                <div class="media-body">
+                                    <h5 class="notification-user">Joseph William</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="notification-user">Sara Soudein</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="user-profile header-notification">
+                    <a href="#" class="waves-effect waves-light">
+                        <img src="images/pic-lady.png" class="img-radius" alt="User-Profile-Image">
+                        <span>Administrator</span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="show-notification profile-notification">
+                        <li class="waves-effect waves-light">
+                            <a href="#">
+                                <i class="fa fa-cog" aria-hidden="true"></i>  Settings
+                            </a>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <a href="#">
+                                <i class="fa fa-user" aria-hidden="true"></i> Profile
+                            </a>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> My Messages
+                            </a>
+                        </li>
+
+                        <li class="waves-effect waves-light">
+                            <a href="Home/Logout">
+                                <i class="fa fa-lock" aria-hidden="true"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-right">
+                <li class="header-notification">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="badge bg-c-red"></span>
+                    </a>
+                    <ul class="show-notification">
+                        <li>
+                            <h6>Notifications</h6>
+                            <label class="label label-danger">New</label>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="notification-user">John Doe</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="">
+                                <div class="media-body">
+                                    <h5 class="notification-user">Joseph William</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="waves-effect waves-light">
+                            <div class="media">
+                                <img class="d-flex align-self-center img-radius" src="images/pic-lady.png" alt="Generic placeholder image">
+                                <div class="media-body">
+                                    <h5 class="notification-user">Sara Soudein</h5>
+                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <span class="notification-time">30 minutes ago</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+
+
+                    
+<nav class="pcoded-navbar" id="theMenu">
+    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+    <div class="pcoded-inner-navbar main-menu">
+        <div class="">
+            <div class="main-menu-header">
+                <img class="img-80 img-radius" src="images/pic-lady.png" alt="User-Profile-Image">
+                <div class="user-details">
+                    <span id="more-details">Administrator<i class="fa fa-caret-down"></i></span>
+                </div>
+            </div>
+            <div class="main-menu-content">
+                <ul>
+                    <li class="more-details">
+                        <a href="Master/Index/Religion"><i class="fa fa-user" aria-hidden="true"></i>View Profile</a>
+                        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+                        <a href="Home/Logout"><i class="fa fa-lock" aria-hidden="true"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="p-15 p-b-0">
+            <form class="form-material">
+                <div class="form-group form-primary">
+                    <input type="text" name="footer-email" class="form-control">
+                    <span class="form-bar"></span>
+                    <label class="float-label"><i class="fa fa-search m-r-10"></i>Search Friend</label>
+                </div>
+            </form>
+        </div>
+        <div class="pcoded-navigation-label">Navigation</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li class="active">
+                <a class="waves-effect waves-dark" href="Home">
+                    <span class="pcoded-micon"><i class="fa fa-home" aria-hidden="true"></i><b>D</b></span>
+                    <span class="pcoded-mtext">Dashboard</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+        </ul>
+        <ul class='pcoded-item pcoded-left-item'>
+                                
+                                <li class='pcoded-hasmenu'>
+                                    <a href='#' class='waves-effect waves-dark'>
+                                        <span class='pcoded-micon'><i class='icon-master' aria-hidden='true'></i><b>BC</b></span>
+                                        <span class='pcoded-mtext'>Master</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Country</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/RegPaymentDetails' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>State</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/RegAdmissionPaymentEntry' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>City</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/StudentRegistration' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Nationality</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/RegFormSelection' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Designation</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/RegAdmissionSelection' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Qualification</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/StudentAdmission' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Occupation</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='/StudentRegistrationReport' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Title</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='/StudentRegistrationReport' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Academic Session</span><span class='pcoded-mcaret'></span></a></li>
+                                          <li class=' '><a href='/StudentRegistrationReport' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Set Date</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='/StudentRegistrationReport' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Change Password</span><span class='pcoded-mcaret'></span></a></li>
+                                        </ul></li>
+
+
+                                        <li class='pcoded-hasmenu'>
+                                       <a href='#' class='waves-effect waves-dark'>
+                                        <span class='pcoded-micon'><i class='icon-setting' aria-hidden='true'></i><b>BC</b></span>
+                                        <span class='pcoded-mtext'>Settings</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'> <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Language</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Author</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>BindingType</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Category</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Room</span><span class='pcoded-mcaret'></span></a></li><li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='#'>Source</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Publisher</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Shelf</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Rack</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Dewey Decimal Class</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Magazine</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Journal</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Newspaper</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Currency</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Media Type</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Release Type</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Photo Album</span><span class='pcoded-mcaret'></span></a></li>
+                                         <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Map Type</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Content Type</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Options</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Sub Category</span><span class='pcoded-mcaret'></span></a></li>
+                                        </ul></li>
+
+
+                                        <li class='pcoded-hasmenu'>
+                                       <a href='#' class='waves-effect waves-dark'>
+                                        <span class='pcoded-micon'><i class='icon-collections' aria-hidden='true'></i><b>BC</b></span>
+                                        <span class='pcoded-mtext'>Collections</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'> <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Book</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Text Book</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Magazine</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Journal</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Software</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='#'>Audio</span><span class='pcoded-mcaret'></span></a></li><li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Video</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Newspaper</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Photograph</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Map</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Sample Paper</span><span class='pcoded-mcaret'></span></a></li>
+                                        <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Specimen</span><span class='pcoded-mcaret'></span></a></li>
+                                        </ul></li>
+
+                                        <li class='pcoded-hasmenu'>
+                                           <a href='#' class='waves-effect waves-dark'>
+                                            <span class='pcoded-micon'><i class='icon-membership' aria-hidden='true'></i><b>BC</b></span>
+                                            <span class='pcoded-mtext'>Membership</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'> <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Student Membership</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Staff Membership</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Other Members</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Membership Group</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Member Category</span><span class='pcoded-mcaret'></span></a></li>
+                                            </ul></li>
+
+                                         <li class='pcoded-hasmenu'>
+                                           <a href='#' class='waves-effect waves-dark'>
+                                            <span class='pcoded-micon'><i class='icon-transactions' aria-hidden='true'></i><b>BC</b></span>
+                                            <span class='pcoded-mtext'>Transactions</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'> <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Collection Issue</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Collection Return</span><span class='pcoded-mcaret'></span></a></li>
+                                            <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Fine Collection</span><span class='pcoded-mcaret'></span></a></li>
+                                            </ul></li>
+
+                                         <li class='pcoded-hasmenu'>
+                                               <a href='#' class='waves-effect waves-dark'>
+                                                <span class='pcoded-micon'><i class='icon-reports' aria-hidden='true'></i><b>BC</b></span>
+                                                <span class='pcoded-mtext'>Reports</span><span class='pcoded-mcaret'></span></a><ul class='pcoded-submenu'> <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Static Reports</span><span class='pcoded-mcaret'></span></a></li>
+                                                <li class=' '><a href='#' class='waves-effect waves-dark'><span class='pcoded-micon'><i class='ti-angle-right'></i></span><span class='pcoded-mtext'>Collection Search</span><span class='pcoded-mcaret'></span></a></li>
+                                         </ul></li>
+
+                                       <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/>
+                                    </ul>
+
+    </div>
+</nav>
+
+                    <div class="pcoded-content">
+                        <!-- Page-header start -->
+<div class="page-header">
+    <div class="page-block">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="#" class="wht-btn-cvr">
+                            <div class="wht-btn">
+                                <div class="blue-box d-flex justify-content-center align-items-center ">   <i class="icon-book_collections"></i></div>
+                                <div class="text-cvr">
+                                    <P>Book collections</P>
+                                </div>
+                            </div>
+                            <div class="grn-btn">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" class="wht-btn-cvr">
+                            <div class="wht-btn">
+                                 <div class="red-box d-flex justify-content-center align-items-center ">   <i class="icon-collection_issue"></i></div>
+                                <div class="text-cvr">
+                                    <P>Collection Issue</P>
+                                </div>
+                            </div>
+                            <div class="grn-btn">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" class="wht-btn-cvr">
+                            <div class="wht-btn">
+                                 <div class="org-box d-flex justify-content-center align-items-center ">   <i class="icon-collection_return"></i></div>
+                                <div class="text-cvr">
+                                    <P>Collection Return</P>
+                                </div>
+                            </div>
+                            <div class="grn-btn">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a href="#" class="wht-btn-cvr">
+                            <div class="wht-btn">
+                                 <div class="grn-box d-flex justify-content-center align-items-center ">   <i class="icon-reports"></i></div>
+                                <div class="text-cvr">
+                                    <P>Reports</P>
+                                </div>
+                            </div>
+                            <div class="grn-btn">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div> 
+</div>
+<!-- Page-header end -->
+                      
+<section class="main-body religion-sec">
+    <div class="container-fluid">
+          <div class="card mt-3 mb-3">
+             <div style="padding-left:15px; padding-right: 15px;">
+                 <div class="save-success">
+                  <div class="row">
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-start">
+                            <P>Saved Successfully</P>
+                        </div>
+                    </div>
+                        <div class="col-lg-6" >
+                            <div class="d-flex justify-content-end">
+                              <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+             </div>
+            <div class="card-body pb-0">
+               <div class="hd">
+                   <div class="row">
+                       <div class="col-lg-6 col-md-4 col-sm-12">
+                          <h4>BOOK</h4>
+
+                          
+
+
+
+
+
+
+
+
+
+                        </div>
+
+                     <div class="col-lg-6 col-md-8 col-sm-12 top-icns-wrp d-flex justify-content-end">
+
+                        <ul>
+                            <li>
+                             <div class="searchBar">
+                                <input id="searchQueryInput" class="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                                <button id="searchQuerySubmit" class="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                                  <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#ffffff" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                                  </svg>
+                                </button>
+                             </div>
+                            </li>
+                           
+                            <li>
+                             <div class="ms-2">
+                               <div class="close-wrp">
+                                     <button  type="button"><i class="fa fa-times" aria-hidden="true"></i></button>              
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+
+                      </div>
+
+
+                   </div>
+               </div>
+
+               <div class="w-100">
+                <div class="row">
+                   
+                    <div class="col-lg-2 col-md-2 col-sm-12 mob-none">
+
+                      
+                     &nbsp;
+                    </div>
+                    <div class="col-lg-10 col-md-12 col-sm-12 ">
+                        <div class="row ">
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="align-wrp">
+                                 <div class="searchBar-one ">
+                                    <input id="searchQueryInput-one" class="searchQueryInput-one" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                                    <button id="searchQuerySubmit-one" class="searchQuerySubmit-one" type="submit" name="searchQuerySubmit">
+                                      <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#ffffff" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                                      </svg>
+                                    </button>
+                                 </div> 
+                            </div>
+                        </div>
+                         <div class="col-sm-12 col-md-9 col-lg-9">
+                      
+                         <div class="modal-footer pe-0" style="border:none;" >
+                            <div class="available-box mt-1">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                         <div class="unavailable-box mt-1">
+                            <i class="fa fa-ban" aria-hidden="true"></i>
+                        </div>
+                             <button type="button" class="blue-btn-sml brdr-radius-5" data-bs-dismiss="modal">Create</button>
+                             <button type="button" class="org-btn-sml float-end brdr-radius-5 ms-2">Edit</button>
+                             <button type="button" class="grn-btn-sml brdr-radius-5 ms-2" data-bs-dismiss="modal">Save</button>
+                             <button type="button" class="red-btn-sml float-end brdr-radius-5 ms-2">Cancel</button>
+                             <button type="button"  data-bs-toggle="modal" data-bs-target="#withdraw" class="grn-btn-sml float-end brdr-radius-5 ms-2 ">Withdraw</button>
+
+                             <button type="button" class="red-btn-sml brdr-radius-5 ms-2" data-bs-dismiss="modal">Delete</button>
+                            
+                        </div>
+
+                    </div>
+
+
+
+                        
+                    </div>
+                </div>
+                   
+                  
+
+                </div>
+               </div>
+              
+
+
+
+
+                </div>
+               </div>
+
+
+
+
+
+
+ <div class="card mt-3 mb-3">
+            <div class="card-body">
+           <div class="w-100">
+             <div class="row form-wrp">
+              <!-- partial:index.partial.html -->
+
+              <div class="col-lg-2 col-md-12">
+                <div class="d-flex justify-content-start ">
+                  <div class="box mb-3" style="height: 300px; text-align: center;">
+
+          
+
+       
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+                    <div id="basediv">
+
+                    </div>
+                      <div style="border: 3px solid black;width: 152px;height:152px" id="picdiv"><img src="" class="profile-img" style="opacity: 0;" id="img"></div> 
+                  
+                    <!--<div style="border: 3px solid black;width: 152px;height:152px" id="picdiv"><img src="" class="profile-img" style="opacity: 0;" id="img"></div>  -->
+                    <canvas id="canvas" class="bg-light border border-2 border-black">
+                      </canvas>
+                      <video id="camera-stream" class="border border-2 border-black"></video> 
+
+
+    <!-------above are boxes-->
+
+
+
+<!------
+  <div class="">
+    <b>Your Cam:</b><br>
+ <!-----  <video id="camera-stream" class="border border-5 border-danger"></video>  
+    <div class="preview">
+      <p class="no-pic">No Pic uploaded</p>
+     <!----- <div style="border: 3px solid black;width: 152px;height:152px" id="picdiv"><img src="" class="profile-img" style="opacity: 0;"></div>
+    </div>    
+  </div>    ---->
+  <div class=" buttonsdiv">
+    <button disabled id="flip-btn" class="btn btn-sm btn-warning">
+      Flip Camera
+    </button>
+    <label for="image_uploads" class="img-upload-btn" onclick="dispdoc()"><i class="bi bi-file-earmark-text-fill"></i></label>  
+       <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" style="opacity: 0;position: absolute;z-index: -1;" >
+     <div style="display: inline-block; position: relative;">
+    <button id="webbtn" class="" onclick="dispweb()"><i class="fa fa-camera"></i></button>
+    <button id="capture-camera" class=""  onclick="dispcaptureimage()">
+      Take photo
+    </button>
+    <button id="clear" class="">Clear</button>
+
+     </div>
+
+  </div>
+
+              </div>
+                </div>
+              </div>
+
+<!------
+    <div>
+      <label for="image_uploads" class="img-upload-btn" onclick="dispdoc()">Upload </label> 
+      <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" style="opacity: 0;">
+    </div>   ---->
+ 
+  
+<!-----
+  <div class="mt-3">
+    <b>Output:</b>
+    <br>
+   <!------- <canvas id="canvas" class="bg-light shadow border border-5 border-success">
+    </canvas>  
+  </div>
+</div>
+---->
+
+<script>
+  
+document.getElementById("clear").addEventListener("click",function(){
+
+a=1;
+document.getElementById("picdiv").style.display="none"
+document.getElementById("camera-stream").style.display="none"
+document.getElementById("canvas").style.display="none"
+document.getElementById("basediv").style.display="inline-block"
+document.getElementById("capture-camera").style.display="none"
+
+
+
+
+
+})
+
+
+var a=1
+function dispweb(){
+  if(a==1){
+    a++;
+  document.getElementById("basediv").style.display="none"
+  document.getElementById("picdiv").style.display="none"
+  document.getElementById("camera-stream").style.display="inline-block"
+  document.getElementById("capture-camera").style.display="inline-block"
+
+}
+}
+
+function dispdoc(){
+
+  document.getElementById("basediv").style.display="none"
+  document.getElementById("picdiv").style.display="inline-block"
+  document.getElementById("camera-stream").style.display="none"
+  document.getElementById("canvas").style.display="none"
+  document.getElementById("capture-camera").style.display="none"
+  document.getElementById("img").style.display="inline-block"
+
+
+
+
+}
+
+function dispcaptureimage(){
+  document.getElementById("camera-stream").style.display="none"
+
+  document.getElementById("canvas").style.display="inline-block"
+  document.getElementById("capture-camera").style.display="none"
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+          
+                
+               
+               <div class="col-lg-10 col-md-12 ">
+                   <div class="row ">
+                    <div class="col-lg-3 d-flex justify-content-between">
+                      <div class="input-group form-floating mb-3" style="width:100px;">
+                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                     </div>
+                     <div class="input-group form-floating mb-3" style="height:20px;">
+                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        
+                           <label for="floatingInput">Acce... </label>
+
+                         <button  data-bs-toggle="modal" data-bs-target="#Collection" type="button" title="Insert Collection At" class="collection-btn-sml  minus-5 "><i class="fa fa-object-group" aria-hidden="true"></i></button>
+                       
+                       </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" style="overflow:hidden;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                      <label for="floatingTextarea">Title</label>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Acquisition Date   </label>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Source</option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">No. of Copies</label>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Language</option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                    <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Accession Type </option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Category</option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Edition</label>
+                      </div>
+                   </div>
+                    <div class="col-lg-3">
+                     <div class="input-group form-floating mb-3">
+                     
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Publisher</label>
+                        <button  data-bs-toggle="modal" data-bs-target="#create" type="button" title="Insert Collection At" class="collection-btn-sml  minus-5 "><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                      
+                      </div>
+                   </div>
+                    <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Volume</label>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Place of Publishing </label>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Binding Type   </option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Year of Publishing</label>
+                      </div>
+                   </div>
+                  <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">ISBN No </label>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                      <div class="form-floating mb-3 ">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">No of Pages</label>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Content Type   </option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                          <option selected>Sub Category</option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                     <div class="form-floating mb-3">
+                       <textarea class="form-control" style="overflow:hidden;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                     <label for="floatingTextarea">Contents</label>
+                     </div>
+                   </div>
+                    <div class="col-lg-3">
+                    <div class="form-floating mb-3">
+                        <select class="form-select float-start" id="floatingSelect" style="width:50%; height:36px; " placeholder="State"  aria-label="Floating label select example">
+                          <option selected></option>
+                          <option value="1">one</option>
+                          <option value="2">Two</option>
+                        </select>
+                        <input type="email" class="form-control float-start" style="width:50%; height:36px;" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Price</label>
+                      </div>
+                   </div>
+
+
+
+            
+            </div>
+
+
+                       
+                </div>
+               </div>
+
+                </div>
+              
+
+
+
+               
+               
+               
+                     <div class="row">
+
+
+                   <div class="col-lg-12">
+                    <div class="card mb-3">
+                     <div class="card-body">
+                        <div class="row form-wrp">
+                        <div class="col-lg-3">
+                          <div class="form-floating mb-3">
+                              <select class="form-select float-start" id="floatingSelect" style="width:50%; height:36px; " placeholder="State"  aria-label="Floating label select example">
+                                <option selected></option>
+                                <option value="1">one</option>
+                                <option value="2">Two</option>
+                              </select>
+                              <input type="email" class="form-control float-start" style="width:50%; height:36px;" id="floatingInput" placeholder="name@example.com">
+                              <label for="floatingInput">Price</label>
+                            </div>
+                     </div>
+                        
+                    <div class="col-lg-3">
+                        <div class="form-floating mb-3 ">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Bill No.</label>
+                        </div>
+                     </div>
+                      <div class="col-lg-3">
+                        <div class="form-floating mb-3 ">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Bill Date  </label>
+                        </div>
+                     </div>
+                    <div class="col-lg-3">
+                      <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                            <option selected>Room </option>
+                            <option value="1">one</option>
+                            <option value="2">Two</option>
+                          </select>
+                        </div>
+                     </div>
+                     
+                     <div class="col-lg-3">
+                      <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                            <option selected>Shelf</option>
+                            <option value="1">one</option>
+                            <option value="2">Two</option>
+                          </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-3">
+                      <div class="form-floating mb-3">
+                          <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                            <option selected>Rack</option>
+                            <option value="1">one</option>
+                            <option value="2">Two</option>
+                          </select>
+                        </div>
+                     </div>
+                    <div class="col-lg-3">
+                        <div class="form-floating mb-3 ">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Issue No </label>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 mb-3">
+                       
+                           <input class="form-control formFile" type="file">
+
+                     </div>
+                    <div class="col-lg-3 d-flex justify-content-between mb-3 mt-2" >
+
+                         <div class="form-check ">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                             Remove E-Copy
+                            </label>
+                         </div>
+                         <div class="E-Copy-btn">
+                         <a href="#">View E-Copy</a>
+                         </div>
+
+
+                    </div>
+                             
+                                <div class="col-lg-3">
+                                   <div class="input-group form-floating mb-3">
+                                   
+                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Class No </label>
+                                       <button type="button" class="floder-btn-sml  minus-5 showmodal" data-show-modal="myModal"  ><i class="fa fa-folder-open" aria-hidden="true"></i></button>
+                                       <button type="button" class="collection-btn-sml  minus-5 " title="Clear Class No"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                    
+                                    </div>
+                                 </div>
+
+
+                                    <div class="col-lg-3">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Cutter No</label>
+                                        </div>
+                                   </div>
+                                     <div class="col-lg-3">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Call No </label>
+                                        </div>
+                                   </div>
+                                     <div class="col-lg-3">
+                                        <div class="form-floating mb-3 ">
+                                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                          <label for="floatingInput">Rack Sr No </label>
+                                        </div>
+                                   </div>
+
+                            </div>
+                     </div>
+                    </div>
+                </div>
+
+
+
+
+
+                        <div class="col-lg-6">
+                         <div class="card mb-3">
+                           <div class="card-body">
+                
+                            <div class="row form-wrp">
+                              <div class="col-lg-12">
+                                 <div class="input-group form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                     <label for="floatingInput">Accession Code </label>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#add-author" class="collection-btn-sml  minus-5 ">Add Author</button>
+                                </div>
+                                  </div>
+                                   <div class="col-lg-12">
+                                    <div class="TableContainerDiv">
+                                       <table class="table table-hover FixedHeaderTable">
+                                          <thead class="thead-dark hd-light">
+                                            <tr>
+                                              <th scope="col">Sl. No.</th>
+                                              <th scope="col">Author Name</th>
+                                              <th scope="col">Delete</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody style="height:80px;">
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td>&nbsp;</td>
+                                              <td>
+                                                <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup">
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">2</th>
+                                              <td>&nbsp;</td>
+                                              <td>
+                                                  <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">3</th>
+                                              <td>&nbsp;</td>
+                                              <td>
+                                                  <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                              </td>
+                                            </tr>
+                                          
+                                               
+                                          </tbody>
+                                        </table>
+                                     </div>
+                                   </div>
+                                
+                            </div>
+                        </div>
+                  
+                    </div>
+                </div>
+
+                 <div class="col-lg-6">
+                    <div class="card mb-3">
+                           <div class="card-body">
+                        
+                           <div style="border:1px solid #2fc433; background-color: #e9ffe9; padding: 34px;">
+                            <div class="row form-wrp dot">
+                              
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Issue Status </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">Not Issued</label></div>
+                                  </div> 
+                               </div>
+                               <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Issue Date </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">3-5-2022</label></div>
+                                  </div> 
+                               </div>
+                               <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Member Type </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">Permanent</label></div>
+                                  </div> 
+                               </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Member No </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">007</label></div>
+                                  </div> 
+                               </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Member Name </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">Prince Antony</label></div>
+                                  </div> 
+                               </div>
+                                 <div class="col-lg-6 col-md-6 col-sm-12">
+                                  <div class="row my-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6"><label class="fw-bold">Details  </label><span class="float-end">:</span></div>
+                                     <div class="col-lg-6 col-md-6 col-sm-6"><label class="">Not Issued</label></div>
+                                  </div> 
+                               </div>
+
+                                
+                            </div>
+                        </div>
+                  
+                   
+                </div>
+            </div>
+             </div>
+
+
+
+
+
+
+
+
+                
+                 <div class="col-lg-12">
+                         <div class="card mb-3 ">
+                           <div class="card-body ">
+                            <div class="row form-wrp d-flex justify-content-center">
+                                <div class="col-lg-3">
+                                    <div class="form-floating my-2">
+                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                      <label for="floatingInput">Withdraw Date</label>
+                                     </div>
+                                </div>
+                                 <div class="col-lg-3">
+                                    <div class="form-floating my-2">
+                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                      <label for="floatingInput">Withdraw Reason </label>
+                                     </div>
+                                </div>
+                                 <div class="col-lg-3">
+                                    <div class="form-floating my-2">
+                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                      <label for="floatingInput">Withdraw Remarks   </label>
+                                     </div>
+                                </div>       
+                            </div>
+                        </div>
+                  
+                    </div>
+                </div>
+                
+
+                
+                
+            
+            
+            
+        
+            
+            
+            
+            
+
+
+ </div>
+
+            </div>
+            
+            
+         
+</section>
+
+
+
+
+
+
+<!-- SELECT COLLECTION CODE -->
+<div class="modal fade" id="Collection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">SELECT COLLECTION CODE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+           <select class="form-select" multiple aria-label="multiple select example">
+              <option selected>Open this select menu</option>
+              <option value="1">Book 1</option>
+              <option value="2">Book 2</option>
+              <option value="3">Book 3</option>
+              <option value="1">Book 4</option>
+              <option value="2">Book 5</option>
+              <option value="3">Book 6</option>
+              <option value="3">Book 7</option>
+              <option value="3">Book 8</option>
+              <option value="3">Book 9</option>
+              <option value="3">Book 11</option>
+          </select>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="grn-btn-sml float-end ms-3">Select</button>
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SELECT COLLECTION CODE -->
+
+<!-- Add Author -->
+<div class="modal fade" id="add-author" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ADD AUTHOR</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+       <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Author</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">Priority</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Close</button>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Add Author -->
+
+<!-- Add Withdraw -->
+<div class="modal fade" id="withdraw" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Withdraw</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+       <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Author</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">Priority</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Close</button>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Add Withdraw -->
+
+
+<!-- DDC Main Class pop -->
+<div class="modal fade" id="ddc-class" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">DDC Main Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DDC Main Class pop end -->
+
+<!-- ddc_divisions pop-->
+<div class="modal fade" id="ddc_divisions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">DDC Divisions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ddc_divisions pop end -->
+
+<!-- ddc_sections pop -->
+<div class="modal fade" id="ddc_sections" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">DDC Sections</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ddc_sections pop end -->
+
+<!-- ddc_schedules -->
+<div class="modal fade" id="ddc_schedules" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <h5 class="modal-title" id="exampleModalLabel">DDC Schedules</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ddc_schedules end -->
+
+<!-- Create pop -->
+<div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CREATE</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+       <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Publisher </label>
+            </div>
+         </div>
+          <div class="col-lg-6">
+              <div class="form-floating mb-3">
+                 <textarea class="form-control" style="overflow:hidden;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+               <label for="floatingTextarea">Address</label>
+             
+            </div>
+         </div>
+        <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">Pincode</label>
+            </div>
+         </div>
+          <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                <option selected>Country</option>
+                <option value="1">India</option>
+                <option value="2">Srilanka</option>
+              </select>
+            </div>
+         </div>
+        <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                <option selected>State</option>
+                <option value="1">Kerala</option>
+                <option value="2">Gujarat</option>
+              </select>
+            </div>
+         </div>
+          <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <select class="form-select" id="floatingSelect" placeholder="State"  aria-label="Floating label select example">
+                <option selected>City</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="2">Three</option>
+              </select>
+            </div>
+         </div>
+           <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">Telephone </label>
+            </div>
+         </div>
+          <div class="col-lg-6">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">EmailID</label>
+            </div>
+         </div>
+         <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Priority">
+              <label for="floatingInput">Website </label>
+            </div>
+         </div>
+        
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Create pop -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Main Modal -->
+    <div class="modal" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+  
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">DEWEY DECIMAL CLASSIFICATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        
+         <section class="main-body religion-sec">
+    <div class="container-fluid">
+          <div class="card">
+
+             <div style="padding-left:15px; padding-right: 15px;">
+             <div class="save-success mt-0">
+              <div class="row">
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6" >
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </div>
+      <div class="card-body py-0 ">
+        <div class="row form-wrp d-flex justify-content-center">
+             <div class="col-lg-2 px-1">
+                <div class="form-floating my-2">
+                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <label for="floatingInput">Class</label>
+                </div>
+             </div>
+              <div class="col-lg-2 px-1">
+                <div class="form-floating my-2">
+                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <label for="floatingInput">Divisions</label>
+                </div>
+             </div>
+              <div class="col-lg-2 px-1">
+                <div class="form-floating my-2">
+                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <label for="floatingInput">Sections</label>
+                </div>
+             </div>
+              <div class="col-lg-2 px-1">
+                <div class="form-floating my-2">
+                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                 <label for="floatingInput">Schedules</label>
+                </div>
+             </div>
+              <div class="col-lg-2 px-1">
+                <a href="#" class="insert-btn float-end brdr-radius-5 ms-2 mt-2 mb-2"><i class="fa fa-check-circle" aria-hidden="true"></i>Insert</a>
+             </div>
+
+
+            </div>
+        </div>
+
+        
+            <div class="card-body pt-0">
+               <div class="hd">
+                   <div class="row">
+                       <div class="col-lg-12 col-md-12 col-sm-12">
+                          <h4>DEWEY DECIMAL CLASSIFICATION</h4>
+                        </div>
+                   </div>
+               </div>
+               <div class="w-100">
+               <div class="little-hd">
+               <h5>DDC Main Class</h5>
+               </div>
+            <table class="table table-hover mb-0" id="tbDetails">
+                                    <thead class="thead-dark hd-light">
+                                        <tr>
+                                            <th scope="col" style="width:27px;">*</th>
+                                            <th scope="col">Code</th>
+                                            <th scope="col">Main Class</th>
+                                            <th scope="col">Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="options" style="height:150px;">
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >000</td>
+                                                <td >Generalities</td>
+                                                 <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a>
+                                                 </td>
+                                            </tr>
+                                            <tr class="selected">
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >100</td>
+                                                <td>Philosophy & psychology</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >200</td>
+                                                <td>Religion</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                 <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>300</td>
+                                                <td>Social science</td>
+                                                <td> <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>400</td>
+                                                <td>Language</td>
+                                                <td> <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>500</td>
+                                                <td>Natural Sciences & mathematics</td>
+                                                <td> <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >600</td>
+                                                <td> Technology (Applied sciences)</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                             
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>700</td>
+                                                <td> The arts Fine and decorative arts</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                 <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>800</td>
+                                                <td>Literature & rhetoric</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                               <tr>
+                                                 <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >900</td>
+                                                <td>Geography & history</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-main"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                       
+                                    </tbody>
+                                </table>
+                               
+                           </div>
+
+                          <div class="w-100">
+                           <div class="little-hd">
+                           <h5>DDC Divisions</h5>
+                           </div>
+                              <table class="table table-hover mb-0" id="tbDetails">
+                                    <thead class="thead-dark hd-light">
+                                        <tr>
+                                            <th scope="col" style="width:27px;">*</th>
+                                            <th scope="col">Code</th>
+                                            <th scope="col">Division</th>
+                                            <th scope="col">Edit</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody style="height:150px;" class="options">
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>000</td>
+                                                <td >Generalities</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr class="selected">
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>100</td>
+                                                <td>Philosophy & psychology</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td scope="row">200</td>
+                                                <td>Religion</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>300</td>
+                                                <td>Social science</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>400</td>
+                                                <td>Language</td>
+                                                <td > <a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>500</td>
+                                                <td>Natural Sciences & mathematics</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>600</td>
+                                                <td>    Technology (Applied sciences)</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>700</td>
+                                                <td> The arts Fine and decorative arts</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>800</td>
+                                                <td>Literature & rhetoric</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                               <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>900</td>
+                                                <td>Geography & history</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-vision"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                       
+                                    </tbody>
+                                  </table>
+                               
+                               </div>
+
+                          <div class="w-100">
+                           <div class="little-hd">
+                           <h5>DDC Sections</h5>
+                           </div>
+                              <table class="table table-hover mb-0" id="tbDetails">
+                                    <thead class="thead-dark hd-light">
+                                        <tr>
+                                            <th scope="col" style="width:27px;">*</th>
+                                            <th scope="col">Code</th>
+                                            <th scope="col">Section</th>
+                                            <th scope="col">Edit</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody style="height:150px;" class="options">
+                                            <tr>
+                                                <th scope="row" class="caret" ><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>000</td>
+                                                <td>Generalities</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr class="selected">
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>100</td>
+                                                <td>Philosophy & psychology</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>200</td>
+                                                <td>Religion</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>300</td>
+                                                <td>Social science</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>400</td>
+                                                <td>Language</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>500</td>
+                                                <td>Natural Sciences & mathematics</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>600</td>
+                                                <td>    Technology (Applied sciences)</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>700</td>
+                                                <td> The arts Fine and decorative arts</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td >800</td>
+                                                <td>Literature & rhetoric</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row" class="caret"><i class="fa fa-caret-right" aria-hidden="true"></i></th>
+                                                <td>900</td>
+                                                <td>Geography & history</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-section"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                             </tr>
+                                       
+                                    </tbody>
+                                  </table>
+                               
+                               </div>
+
+
+                          <div class="w-100">
+                           <div class="little-hd">
+                           <h5>DDC Schedules</h5>
+                           </div>
+                              <table class="table table-hover mb-0" id="tbDetails">
+                                    <thead class="thead-dark hd-light">
+                                        <tr>
+                                            <th scope="col">Code</th>
+                                            <th scope="col">Schedule</th>
+                                            <th scope="col">Edit</th>
+                                            <th scope="col">Delete</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody style="height:150px;" >
+                                            <tr>
+                                                <th scope="row">000</th>
+                                                <td >Generalities</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup-two" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup-two">
+
+                                                        <div class="popuptext" id="myPopup-two">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">100</th>
+                                                <td>Philosophy & psychology</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">200</th>
+                                                <td>Religion</td>
+                                               <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row">300</th>
+                                                <td>Social science</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">400</th>
+                                                <td>Language</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                            </tr>
+                                             <tr>
+                                                <th scope="row">500</th>
+                                                <td>Natural Sciences & mathematics</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row">600</th>
+                                                <td>    Technology (Applied sciences)</td>
+                                                 <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                <th scope="row">700</th>
+                                                <td> The arts Fine and decorative arts</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                             </tr>
+                                              <tr>
+                                                <th scope="row">800</th>
+                                                <td>Literature & rhetoric</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                             </tr>
+                                               <tr>
+                                                <th scope="row">900</th>
+                                                <td>Geography & history</td>
+                                                <td><a href="#" class="float-start showmodal" data-show-modal="ddc-schedules"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></a></td>
+                                                  <td>
+                                                   <a class="delete-link float-start ms-1" href="#!" class="sml-popup" onclick="myFunction()"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                   <div class="sml-popup" >
+
+                                                        <div class="popuptext" id="myPopup">
+                                                           <h5> Do you confirm?</h5>
+                                                         
+                                                             <div>
+                                                                <button type="button" class="grn-btn-sml baby-btn ">Cancel</button>
+                                                                 <button type="button" class="red-btn-sml baby-btn" data-bs-dismiss="modal">Delete</button>
+                                                              </div>
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                        
+                                                 </td>
+                                             </tr>
+                                       
+                                    </tbody>
+                                  </table>
+                                <a href="#"  data-bs-toggle="modal" data-bs-target="#Add" class="date-grn  float-end mt-3">Add/Update</a>
+                               </div>
+                             
+
+
+            </div>
+          </div>
+    </div>
+</section>
+
+
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+  <!-- Main Modal end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- DDC Main Pop -->
+    <div class="modal mt-5 " id="ddc-main" tabindex="-1" aria-labelledby="infoModalLabel" 
+          aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel">DDC Main Class</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- DDC Main Pop End -->
+
+
+ <!-- DDC Main Pop -->
+    <div class="modal mt-5 " id="ddc-vision" tabindex="-1" aria-labelledby="infoModalLabel" 
+          aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel">DDC Vision</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- DDC Main Pop End -->
+    <!-- DDC Section Pop -->
+    <div class="modal mt-5 " id="ddc-section" tabindex="-1" aria-labelledby="infoModalLabel" 
+          aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel">DDC Section</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- DDC Section Pop End -->
+
+     <!-- DDC Schedules Pop -->
+    <div class="modal mt-5 " id="ddc-schedules" tabindex="-1" aria-labelledby="infoModalLabel" 
+          aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" >
+            <h5 class="modal-title" id="exampleModalLabel">DDC Schedules</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+        <div class="row">
+        <div class="col-lg-12">
+           <div class="save-success-pop">
+              <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="d-flex justify-content-start">
+                        <P>Saved Successfully</P>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex justify-content-end">
+                          <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-lg-12">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Code</label>
+            </div>
+         </div>
+          <div class="col-lg-12">
+              <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Name</label>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="red-btn-sml" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="grn-btn-sml float-end ms-3">Save</button>
+      </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- DDC Section Pop End -->
+
+
+
+
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- waves js -->
+    <script src="js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <!-- menu js -->
+    <script src="js/pcoded.min.js"></script>
+    <script src="js/vertical-layout.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/srch.js"></script>
+    <script src="js/img-upload.js"></script>
+	<script src="js/web-cam.js"></script>
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+     <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup-two");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+
+
+
+    <script>
+"use strict";
+Array.from(document.getElementsByClassName('showmodal')).forEach( (e) => {
+  e.addEventListener('click', function(element) {
+    element.preventDefault();
+    if (e.hasAttribute('data-show-modal')) {
+      showModal(e.getAttribute('data-show-modal'));
+    }
+  }); 
+});
+
+// Show modal dialog
+function showModal(modal) {
+  const mid = document.getElementById(modal);
+  let myModal = new bootstrap.Modal(mid);
+  myModal.show();
+}
+
+</script>
+<style type="text/css">
+.ms-n5 {
+    margin-left: -40px;
+}
+ #screenshots{
+ position:absolute;
+ top:0px;
+ left:0px;
+ z-index:999;
+
+}
+
+#screenshots img {
+    width: 100%;
+    height: 101px;
+    left: 39px;
+    position: relative;
+    top: 38px;
+}
+
+.box img, video {
+    background-color: rgb(238, 244, 246);
+    height: 152px;
+    max-width: 100%;
+}
+.upload-options span{
+  font-size:14px;
+  color:#ffffff;
+}
+.box .button.is-success{
+  width:100%;
+  border-radius:0px;
+}
+
+.box .button.is-success{
+    width: 27%;
+    border-radius: 0px;
+    display: flex;
+    justify-content:space-between;
+ 
+}
+</style>
+
+
+
+
+<script src="/js/webcamera.js"></script>
+
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'></script>
+
+
+</body>
+
+</html>

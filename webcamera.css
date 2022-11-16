@@ -1,0 +1,85 @@
+video  {
+    width: 152px;
+    height: 152px;
+    background: rgba(0,0,0,0.2);
+    -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
+    transform: scaleX(-1);         /* mirror effect while using front cam */
+  }
+  
+  #canvas  {
+    width: 152px;
+    height: 152px;
+    -webkit-transform: scaleX(-1); /* mirror effect while using front cam */
+    transform: scaleX(-1);         /* mirror effect while using front cam */
+  }
+  
+  
+  
+  
+  .profile-img {
+    width: 152px;
+    height: 152px;
+   
+  }
+  
+  .img-upload-btn {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+  
+  .img-wrapper {
+    padding: 20px;
+  }
+
+
+  .buttonsdiv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  #basediv{
+    width: 152px;
+    height: 152px;
+    background-color: brown;
+    display: inline-block;
+  }
+
+
+  #picdiv{
+    display: none;
+  }
+  #camera-stream{
+    display: none;
+    width: 152px;
+    height: 152px;
+  }
+  #capture-camera{
+    transition: 0.5s all;
+    display: none;
+    position:absolute;
+    top: 50px;
+    left: -36px;
+  }
+  #canvas{
+    display:none ;
+  }
+
+
+  .img-upload-btn {
+    width: 20px;
+    height: auto;
+    border: 1px solid black;
+    padding: 0px;
+   
+    font-size: .875rem;
+    border-radius: .2rem;
+   
+}
+#img{
+  width: 146px;
+  height: 146px;
+}
+#flip-btn{
+  display: none;
+}

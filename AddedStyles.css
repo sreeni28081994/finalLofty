@@ -1,0 +1,56 @@
+﻿.maxWidth70
+{
+    max-width:70px!important;
+}
+.RowHeaderStyle {
+    width: 30px !important;
+    text-align:center!important;
+}
+.caret {
+    text-align: center !important;
+    
+}
+.myDeleteButton {
+    cursor: pointer;
+    /*max-width: 70px !important;*/
+}
+.myEditButton {
+    cursor: pointer;
+    /*max-width: 70px !important;*/
+}
+.TableContainerDiv {
+    width: 100% !important;
+    overflow: auto !important;
+    
+}
+.TableContainerDivAutoHeight {
+    width: 100% !important;
+    overflow: auto !important;
+}
+@media screen and (max-width: 768px) {
+    .TableContainerDiv {
+        max-height:420px;
+    }
+}
+/*
+@media screen and (min-width: 992px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
+*/
+
+.FixedHeaderTable th {
+    position: -webkit-sticky; /*this is for all Safari (Desktop & iOS), not for Chrome*/
+    position: sticky;
+    top: -1px;
+    z-index: 1; /*any positive value, layer order is global*/
+    /*background: #fff;*/ /*any bg-color to overlap*/
+    text-align:left;
+    padding:3px!important;
+}
+
+.FixedHeaderTable td {
+    padding: 3px !important;
+    text-align: left;
+}

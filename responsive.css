@@ -1,0 +1,271 @@
+
+
+/*  small devices (ipad, 812px and down) */
+@media only screen and (min-width: 992px) {
+  .searchBar {
+    width: 100%;
+    max-width: 300px;
+}
+}
+/*  small devices (ipad, 812px and down) */
+@media only screen and (max-width: 920px) {
+.searchBar-one {
+    width: 100%;
+}
+.save-success-pop i {
+    padding-top: 0px; 
+    margin-top: -18px;
+    float: left;
+}
+.save-success i {
+    padding-top: 0px; 
+    margin-top: -18px;
+    float: left;
+}
+.password .w-50{
+    width:100% !important; 
+}
+ .save-success {
+    width: 100%;
+}
+.header-navbar .navbar-wrapper .navbar-container .nav-left, .header-navbar .navbar-wrapper .navbar-container .nav-right{
+   background-color: #0b2f7f;
+}
+.session-div a {
+    font-size: 16px;
+    color: #ffffff !important;
+    padding: 0px 20px 0px 20px !important;
+}
+.wht-btn-cvr{
+    margin-bottom:20px !important; 
+}
+.header-navbar .navbar-wrapper .navbar-container .nav-left,
+    .header-navbar .navbar-wrapper .navbar-container .nav-right {
+       
+        top:0px;
+    }
+.navbar-logo img{
+    margin-top: -5px;
+    width: 140px;
+}
+.page-header .page-block {
+    padding: 8px 40px 5px 40px;
+    display: none;
+}
+.header-navbar {
+    min-height:50px;
+    
+}
+.pcoded .mCSB_container_wrapper>.mCSB_container{
+    top:16px;
+    left:10px;
+}
+.layer{
+	overflow:initial;
+}
+.round-shape{
+	width: 95vh;
+    height: 95vh;
+    top: 6vh;
+}
+.round-shape::before{
+	width: 100vh;
+    height: 100vh;
+    right: -1vh;
+    top: -2vh;
+}
+.first-sec .text-icon-wrp{
+	margin-top: 6%;
+}
+.signup{
+	left:17%;
+}
+.social-cvr {
+    left: 36%;
+}
+.background-shapes{
+    height: 1909px;
+    
+}
+.mob-hide{
+    display: none;
+}
+.log-wrp {
+    right: 6px;
+}
+.srch-wrapper .input.active {
+    width: 130px;
+    right: 100px;
+    position: relative;
+}
+.srch-wrapper .input.active {
+    right: 0px;
+    position: relative;
+}
+.srch-wrapper {
+    margin-right: 50px;
+}
+.mob-top-fld{
+    margin-top:30px;
+}
+
+
+}
+
+* small devices (mob, 780px and down) */
+@media screen and (max-width: 780px) {
+
+ .hd {
+  
+    padding-bottom: 5px;
+}
+
+}
+
+/*  small devices (mob, 412px and down) */
+@media screen and (max-width: 550px) {
+.searchQuerySubmit{
+		width: 7.9rem;
+	}
+.searchQueryInput{
+		width:100%;
+}
+  .mob-none{
+        display: none;
+    }
+ .searchBar-one {
+  width: 100%;
+}
+.eighty-w{
+    width: 100% !important;
+    max-width: 100%;
+}
+ .log-wrp {
+    right: 0px;
+}
+.top-icns-wrp ul li {
+    float: left;
+    margin-left:0px;
+}
+ .top-icns-wrp ul {
+    position: relative;
+    left: -10px;
+}
+.save-success {
+    width:100%;
+}
+.mob-top{
+    margin-top:-46px;
+}
+
+.close-wrp{
+    right:0px;
+}
+ .header-navbar .navbar-wrapper .navbar-container .nav-left, .header-navbar .navbar-wrapper .navbar-container .nav-right {
+    background-color: #0b2f7f;
+    padding-left: 22px;
+}
+.mob-view{
+    width: 100%;
+    background: #0b2f7f;
+    float: left;
+    display: block;
+    }
+.session-div {
+    background: #0b2f7f;
+    padding-left: 75px;
+}
+ .round-shape{
+ 	border-radius:0%;
+ }
+ .round-shape::before{
+ 	border-radius:0%;
+ }
+ .signup {
+
+    left: -5%;
+}
+.social-cvr {
+    left: 24%;
+}
+.background-shapes {
+    height: 1200px;
+}
+.first-sec h3:before{
+    left:14px;
+}
+.first-sec h3:after{
+    right:14px;
+}
+.signup{
+    top: 18%;
+}
+
+.blue-hd h2{
+    text-align: center;
+}
+.blue-hd h5 {
+    text-align: center;
+}
+.blue-hd {
+    padding: 20px 20px 30px 20px;
+}
+.blue-hd .justify-content-end{
+  justify-content: center !important;
+}
+}
+
+/*  small devices (mob, 380px and down) */
+@media screen and (max-width:549px) {
+.searchQuerySubmit {
+    width: 2.9rem;
+}
+}
+
+
+
+/*  small devices (mob, 380px and down) */
+@media screen and (max-width: 380px) {
+.signup {
+    left: -7%;
+}
+.first-sec h3:before {
+    left: -10px;
+}
+.first-sec h3:after {
+    right: -10px;
+}
+}
+
+/*  small devices (mob, 380px and down) */
+@media screen and (max-width: 330px) {
+.signup {
+    left: -12%;
+    width:84%;
+    top: 7%;
+}
+.first-sec h3:before {
+   background-color:transparent;
+}
+.first-sec h3:after {
+    background-color:transparent;
+}
+}
+
+/*  small devices (mob, 380px and down) */
+@media screen and (min-width: 1600px) {
+.signup{
+    max-width: 700px;
+    
+}
+.first-sec h3:before{
+    left: 152px;
+}
+.first-sec h3:after {
+    right: 152px;
+}
+.social-cvr{
+    left:37%;
+}
+}
+
